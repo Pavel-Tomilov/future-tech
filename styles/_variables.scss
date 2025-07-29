@@ -12,6 +12,8 @@
     --color-accent: #FFD11A;
     --color-red:  #FF5500;
 
+--border:  #{rem(1)} solid var(--color-dark-15);
+
     --font-family-base: 'Inter', sans-serif;
     --font-family-accent: 'Kumbh Sans', sans-serif;
 
@@ -21,7 +23,7 @@
     --transition-duration: 0.2s;
 
     @include laptop {
-        --container-padding-x: #{rem(1280)}; 
+        --container-padding-x: #{rem(12)}; 
     }
     
 
