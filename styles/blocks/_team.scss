@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.team {
+--personIMAGEsize: #{rem(60)};
+
+    display: flex;
+    padding: rem(10);
+    background-color: var(--color-dark-10);
+    border-radius: rem(100);
+
+
+
+    &__person {
+        width: var(--personIMAGEsize);
+    }
+}
