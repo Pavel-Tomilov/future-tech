@@ -12,5 +12,12 @@
 
     &__person {
         width: var(--personIMAGEsize);
+        background-color: var(--color-dark-15);
+        border: rem(2) solid var(--color-dark-40);
+        border-radius: 50%;
+
+&:not(:first-child) {
+    margin-left: calc(var(--personIMAGEsize) / 4 * -1);
     }
+}
 }
