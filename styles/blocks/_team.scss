@@ -10,11 +10,10 @@
 
 @include laptop {
     --personIMAGEsize: #{rem(50)};
-
      padding: rem(8);
 }
 
-@include laptop {
+@include tablet {
     --personIMAGEsize: #{rem(40)};
 }
 
