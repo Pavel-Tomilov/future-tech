@@ -1079,6 +1079,55 @@ button[aria-label]::before {
 .section__subtitle {
   justify-self: start;
 }
+.section__body {
+  border-block: var(--border);
+}
+
+.list__item:not(:last-child) {
+  border-bottom: var(--border);
+}
+
+.tile {
+  padding: clamp(0.625rem, 0.1470588235rem + 1.9607843137vw, 2.5rem);
+  background-color: var(--color-dark-10);
+  border: var(--border);
+  border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .tile {
+    border-radius: 0.625rem;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 37.5% auto;
+}
+.card__preview, .card__body {
+  padding: 5rem;
+}
+@media (width <= 90.06125rem) {
+  .card__preview, .card__body {
+    padding: 3.75rem;
+  }
+}
+.card__preview {
+  padding-left: 0;
+}
+@media (width <= 63.99875rem) {
+  .card__preview {
+    padding-right: 0;
+    padding-block: 3.125rem;
+  }
+}
+.card__body {
+  padding-right: 0;
+}
+@media (width <= 63.99875rem) {
+  .card__body {
+    padding: 1.875rem 1rem;
+  }
+}
 
 .header,
 main > *:not(:last-child),
